@@ -166,6 +166,9 @@ p { margin: 0; }
 .tile { background: var(--branco); border-radius: var(--r); padding: 24px; aspect-ratio: 3/2; display: grid; align-content: start; gap: 10px; min-width: 0; }
 .tile b { font-family: var(--display); font-weight: 600; text-transform: uppercase; font-size: clamp(1.5rem, 2.2vw, 2rem); line-height: 1.05; color: var(--azul-rlm); }
 .tile span { font-size: 0.9375rem; color: var(--cinza-texto); }
+.tile.client { align-content: space-between; }
+.tile.client svg { height: clamp(56px, 6vw, 84px); width: auto; max-width: 100%; display: block; }
+@media (max-width: 860px) { .tile.client svg { height: 52px; } }
 .tile.big { grid-column: span 2; aspect-ratio: auto; background: var(--azul-rlm); position: relative; overflow: hidden; }
 .tile.big h2 { color: var(--branco); font-size: clamp(2rem, 3vw, 2.75rem); }
 .tile.big p { color: var(--azul-nevoa); max-width: 36ch; font-size: 1rem; }
@@ -374,8 +377,36 @@ footer .wrap { padding-block: 64px 32px; display: grid; gap: 56px; }
         <div class="tile big rise"><h2 id="prova-t">Indústria pesada</h2><p>Turmas formadas e acompanhamento técnico em siderúrgicas do Ceará e do Pará.</p></div>
         <div class="tile num rise" style="--i:1"><b>+10</b><span>turmas de operadores de pontes rolantes já formadas</span></div>
         <div class="tile rise" style="--i:2"><b>40 h</b><span>de carga horária por turma, em 5 dias</span></div>
-        <div class="tile rise"><b>Aço Cearense</b><span>Siderurgia · Fortaleza-CE · capacitação in-company</span></div>
-        <div class="tile rise" style="--i:1"><b>Sinobras</b><span>Siderurgia · Marabá-PA · acompanhamento técnico em campo</span></div>
+        <div class="tile client rise"><svg role="img" aria-label="Aço Cearense" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 74"><defs><clipPath id="acc"><rect fill="none" x="-37" width="222" height="74"/></clipPath></defs><g clip-path="url(#acc)"><g>
+<path fill="#223564" d="M109.1.5c0,.1.2.2.3.4l6.7,9.2c.4.9.1,1.5-.8,1.7h-15.3l-6.7,9.1c-1,1.3-.5,2.3,0,3.1l6.8,9.4,7.3,10c.2.4,1.3,1.6,2,1.5,0,0,.1,0,.2,0,0,0-.1.1-.4.2-.3,0-.7.1-1.1.1-.2,0-.4,0-.6,0-.5,0-.9,0-.9,0h-17.3c-1.6,0-2.2-.2-3.1-1.4l-14.2-19.5c-.5-.7-.8-1.3-.6-2h9.3c.2,0,.4,0,.7,0,4.2-.7,16.6-10.4,24.6-18.5l2.2-3c.2-.4.6-.4.7-.3,0,0,.1,0,.2.2"/>
+<path fill="#223564" d="M82.5,2.7l-14.5,19.9-15.4,21.2c-.9,1.2-1.5,1.4-3.1,1.4h-14c7.6-4.8,21.6-16.1,47-42.5"/>
+<path fill="#6caed5" d="M82.5,2.7c-25.4,26.3-39.4,37.6-47,42.5h-3.4c-1-.2-1.2-.8-.8-1.7l15.2-20.9L62,1.4c.9-1.2,1.5-1.4,3.1-1.4h17.3c1,.2,1.2.8.8,1.7l-.7,1Z"/>
+<path fill="#6caed5" fill-rule="evenodd" d="M109.3,44.9c-.7.1-1.7-1-2-1.5l-7.3-10h15.8c1,.2,1.2.8.8,1.7l-6.7,9.2c-.2.2-.3.4-.4.5h0s0,0-.2,0"/>
+<path fill="#6caed5" d="M105.9,3.7c-8,8.1-20.3,17.8-24.6,18.5-.3,0-.5,0-.7,0h-9.3c0-.3.2-.6.4-.9L86.1,1.4c.9-1.2,1.5-1.4,3.1-1.4h16.8s1.7,0,1.7,0c.5,0,.8,0,1,.2.2,0,.4.3.4.3,0,0-.1-.1-.2-.1-.2,0-.5,0-.7.3l-2.2,3h0Z"/>
+<path fill="#223564" d="M22.1,55.4h-2.3c-2.7,0-4.9,2.2-4.9,5v6.1c0,2.7,2.1,4.9,4.8,5h2.6c2.7,0,4.8-2.3,4.8-5v-.3h-2.6v.3c0,1.3-1,2.4-2.3,2.4h-2.3c-1.3,0-2.3-1.1-2.3-2.4v-6.1c0-1.3,1-2.4,2.3-2.4h2.3c1.3,0,2.3,1.1,2.3,2.4v.2h2.6v-.2c0-2.8-2.2-5-4.9-5Z"/>
+<path fill="#223564" d="M54.2,55.4h-2.3c-2.7,0-4.9,2.2-4.9,5v6.1c0,2.7,2.1,4.9,4.8,5h2.6c2.7,0,4.8-2.3,4.8-5v-.3h-2.6v.3c0,1.3-1,2.4-2.3,2.4h-2.3c-1.3,0-2.3-1.1-2.3-2.4v-6.1c0-1.3,1-2.4,2.3-2.4h2.3c1.3,0,2.3,1.1,2.3,2.4v.2h2.6v-.2c0-2.8-2.2-5-4.9-5Z"/>
+<path fill="#223564" d="M36.5,55.4h-3.5c-2.7,0-4.9,2.2-4.9,5v6.1c0,2.7,2.2,5,4.9,5h3.5c1.3,0,2.6-.5,3.5-1.5.9-.9,1.4-2.2,1.4-3.5v-6.1c0-2.8-2.2-5-4.9-5M38.8,66.5c0,.6-.2,1.2-.7,1.7-.4.4-1,.7-1.6.7h-3.5c-1.3,0-2.3-1.1-2.3-2.4v-6.1c0-1.3,1-2.4,2.3-2.4h3.5c1.3,0,2.3,1.1,2.3,2.4v6.1h0Z"/>
+<path fill="#223564" d="M131.9,55.4h-2.2c-2.5,0-4.6,2.1-4.6,4.7s.5,2.4,1.4,3.3c.9.9,2,1.4,3.3,1.4h2.2c.5,0,1,.2,1.4.6.4.4.6.9.6,1.4,0,1.1-.9,2-2,2h-2.2c-1.1,0-2-.9-2-2v-.6h-2.6v.6c0,2.6,2.1,4.7,4.6,4.7h2.2c2.5,0,4.6-2.1,4.6-4.7s-.5-2.4-1.4-3.3c-.9-.9-2-1.4-3.3-1.4h-2.2c-.5,0-1-.2-1.4-.6-.4-.4-.6-.9-.6-1.4,0-1.1.9-2,2-2h2.2c1.1,0,2,.9,2,2v.6h2.6v-.6c0-2.6-2.1-4.7-4.6-4.7Z"/>
+<path fill="#223564" d="M62.8,58.1h7.7v-2.6h-10.3v16.1h10.3v-2.6h-7.7v-4.1h7.7v-2.6h-7.7v-4.1Z"/>
+<path fill="#223564" d="M102,58.1h7.7v-2.6h-10.3v16.1h10.3v-2.6h-7.7v-4.1h7.7v-2.6h-7.7v-4.1Z"/>
+<path fill="#223564" d="M140.2,58.1h7.7v-2.6h-10.3v16.1h10.3v-2.6h-7.7v-4.1h7.7v-2.6h-7.7v-4.1Z"/>
+<path fill="#223564" d="M93.4,55.4h-7.2v16.1h2.6v-6h5.5c.4,0,.7,0,1,.4.3.3.4.6.4,1v4.7h2.6v-4.7c0-1.1-.4-2.1-1.2-2.9,0,0,0,0-.1-.1.8-.9,1.3-2.1,1.3-3.4,0-2.8-2.2-5-4.9-5M93.5,62.8h-4.6c0,0,0-4.7,0-4.7h4.6c1.3,0,2.3,1.1,2.3,2.4s-1,2.3-2.3,2.4Z"/>
+<path fill="#223564" d="M121.4,67.4l-7.6-11.9h-3.1v16.1h2.6v-12l7.6,12h3.1v-16.1h-2.6v11.9Z"/>
+<path fill="#223564" d="M6,55.4L.2,71.5h2.8l1-2.6h6.9l.9,2.6h2.8l-5.8-16.1h-2.8,0ZM4.9,66.2l2.5-6.9,2.5,6.9h-5Z"/>
+<path fill="#223564" d="M19.6,71.5l-.9,2.5h2.8l.9-2.5h-2.8Z"/>
+<path fill="#223564" d="M76.9,55.4l-5.8,16.1h2.8l.9-2.6h6.9l.9,2.6h2.8l-5.8-16.1h-2.8,0ZM75.8,66.2l2.5-6.9,2.5,6.9h-5Z"/>
+</g></g></svg><span>Siderurgia · Fortaleza-CE · capacitação in-company</span></div>
+        <div class="tile client rise" style="--i:1"><svg role="img" aria-label="Sinobras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 100"><defs><clipPath id="sbc"><rect fill="none" y=".5" width="128" height="99"/></clipPath></defs><g clip-path="url(#sbc)"><g fill="#223564">
+<path d="M55.4,93.4c0,.8-.3,1.5-.8,2-.5.5-1.3.8-2,.8h-4.3c-1.6,0-2.9-1.3-2.9-2.9v-7.4c0-1.6,1.3-2.9,2.9-2.9h4.3c1.6,0,2.9,1.3,2.9,2.9v7.4ZM52.5,80h-4.3c-3.4,0-6.1,2.7-6.1,6.1v7.4c0,3.3,2.7,6,6.1,6.1h4.3c1.6,0,3.2-.6,4.3-1.8,1.2-1.1,1.8-2.7,1.8-4.3v-7.4c0-3.3-2.7-6.1-6.1-6.1"/>
+<path d="M8.4,80h-2.7c-3.1,0-5.7,2.6-5.7,5.7s.6,2.9,1.7,4c1.1,1.1,2.5,1.7,4,1.7h2.7c.7,0,1.3.3,1.8.7.5.5.7,1.1.7,1.7,0,1.4-1.1,2.5-2.5,2.5h-2.7c-1.4,0-2.5-1.1-2.5-2.5v-.7H0v.7c0,3.1,2.6,5.7,5.7,5.7h2.7c3.1,0,5.7-2.5,5.7-5.7s-.6-2.9-1.7-4c-1.1-1.1-2.5-1.7-4-1.7h-2.7c-.7,0-1.3-.3-1.8-.7-.5-.5-.7-1.1-.7-1.7,0-1.4,1.1-2.5,2.5-2.5h2.7c1.4,0,2.5,1.1,2.5,2.5v.7h3.2v-.7c0-3.1-2.6-5.7-5.7-5.7Z"/>
+<path d="M122.3,80h-2.7c-3.1,0-5.7,2.6-5.7,5.7s.6,2.9,1.7,4c1.1,1.1,2.5,1.7,4,1.7h2.7c.7,0,1.3.3,1.8.7.5.5.7,1.1.7,1.7,0,1.4-1.1,2.5-2.5,2.5h-2.7c-1.4,0-2.5-1.1-2.5-2.5v-.7h-3.2v.7c0,3.1,2.6,5.7,5.7,5.7h2.7c3.1,0,5.7-2.5,5.7-5.7s-.6-2.9-1.7-4c-1.1-1.1-2.5-1.7-4-1.7h-2.7c-.7,0-1.3-.3-1.8-.7-.5-.5-.7-1.1-.7-1.7,0-1.4,1.1-2.5,2.5-2.5h2.7c1.4,0,2.5,1.1,2.5,2.5v.7h3.2v-.7c0-3.1-2.6-5.7-5.7-5.7"/>
+<path d="M20.1,80h-3.2v19.5h3.2v-19.5Z"/>
+<path d="M88.1,88.9h-5.7c0,0,0-5.7,0-5.7h5.6c1.6,0,2.9,1.3,2.9,2.9s-1.3,2.8-2.8,2.9ZM88.1,80h-8.9v19.5h3.2v-7.3h6.8c.4,0,.9.1,1.2.4.3.3.5.7.5,1.2v5.7h3.2v-5.7c0-1.3-.5-2.5-1.4-3.5,0,0-.1-.1-.2-.2,1-1.1,1.6-2.5,1.6-4.1,0-3.3-2.7-6.1-6.1-6.1"/>
+<path d="M36.1,94.5l-9.3-14.5h-3.8v19.5h3.2v-14.5l9.4,14.5h3.8v-19.5h-3.2v14.5Z"/>
+<path d="M101.6,93.1l3.1-8.4,3.1,8.4h-6.2ZM103,80l-7.1,19.5h3.4l1.2-3.2h8.5l1.2,3.2h3.4l-7.1-19.5h-3.4Z"/>
+<path d="M70.7,96.3h-6.1v-4.9h6.1c1.4,0,2.5,1.1,2.5,2.5s-1.1,2.5-2.5,2.5ZM64.6,83.2h5.5c1.4,0,2.5,1.1,2.5,2.5s-1.1,2.5-2.5,2.5h-5.5v-4.9ZM74.3,89.5c.9-1,1.5-2.3,1.5-3.8,0-3.1-2.6-5.7-5.7-5.7h-8.7v19.4h9.3c3.1,0,5.7-2.5,5.7-5.7s-.8-3.3-2.1-4.3"/>
+<path d="M98.5,47.8c.2.5.1,1.2-.2,2.1-.4,1-1,1.6-1.7,1.9l-15.7,6.6-4.3-10.9-.7,13-29.5,12.5.7-13,26.9-11.4c.3-.1.6-.4.6-.8.1-.4.1-.7,0-1.1l-2.1-5.3c0-.2-.3-.5-.7-.6-.4-.2-.7-.2-1,0l-26.1,11c-.8.3-1.7.3-2.8-.2-1.1-.4-1.8-.9-2.1-1.6l-9.8-24.5c-.3-.9-.3-1.9.3-3,.5-1.1,1.2-1.9,2.1-2.2l14.9-6.3,5.3,13.4-.6-15.4L79.4.5l.3,14.7-24.6,10.4c-.5.2-.7.5-.8.9-.2.4-.2.8,0,1.1l2,5c0,.2.3.4.7.5.4.1.7.1,1,0l27.1-11.4c.6-.3,1.4-.1,2.3.5.9.6,1.5,1.3,1.7,1.9l9.5,23.7h0Z"/>
+</g></g></svg><span>Siderurgia · Marabá-PA · acompanhamento técnico em campo</span></div>
         <div class="tile rise" style="--i:2"><b>10 dias</b><span>úteis, no máximo, para emitir os certificados</span></div>
         <div class="tile rise" style="--i:3"><b>7,0</b><span>nota mínima na prova teórica, mais a avaliação prática</span></div>
       </div>
@@ -454,7 +485,7 @@ footer .wrap { padding-block: 64px 32px; display: grid; gap: 56px; }
       <div><h3>Responsável</h3><ul><li>Roger Lucena</li><li>CREA-CE 358388</li></ul></div>
       <div><h3>Empresa</h3><ul><li>RLM Serviços e Soluções para Equipamentos Industriais LTDA</li><li>CNPJ 43.116.511/0001-86</li></ul></div>
     </div>
-    <div class="legal"><p>Fotos de turmas: reais, formadas pela RLM. Imagens de equipamentos: ilustrativas, geradas por IA.</p><a class="btn" href="#topo">Voltar ao topo</a></div>
+    <div class="legal"><p>Fotos de turmas: reais, formadas pela RLM. Imagens de equipamentos: ilustrativas, geradas por IA. Marcas Aço Cearense e Sinobras pertencem ao Grupo Aço Cearense e aparecem para identificar clientes atendidos.</p><a class="btn" href="#topo">Voltar ao topo</a></div>
   </div>
 </footer>
 
