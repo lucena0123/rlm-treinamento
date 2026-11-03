@@ -184,13 +184,13 @@ p { margin: 0; }
 /* ---------- About: inset panel ---------- */
 .sobre { padding: 0 max(20px, env(safe-area-inset-right, 0px)) 20px max(20px, env(safe-area-inset-left, 0px)); }
 .panel { background: var(--azul-profundo); color: var(--branco); border-radius: var(--r); overflow: hidden; display: grid; grid-template-columns: minmax(0, 60fr) minmax(0, 40fr); }
-.panel .left { padding: 56px 56px 0; display: grid; gap: 48px; align-content: start; }
+.panel .left { padding: 56px; display: grid; gap: 48px; align-content: start; }
 .panel h2 { font-family: var(--display); font-weight: 600; text-transform: uppercase; font-size: clamp(2.25rem, 4vw, 3.75rem); line-height: 1.02; color: var(--branco); }
 .panel h2 .em { color: var(--azul-claro); }
-.shaped { width: min(38vw, 560px); aspect-ratio: 1; border-radius: var(--r) var(--r) 0 0; overflow: hidden; position: relative; margin-bottom: -8%; }
+.shaped { width: min(100%, 560px); aspect-ratio: 1; border-radius: var(--r); overflow: hidden; position: relative; }
 .shaped img { width: 100%; height: 100%; object-fit: cover; }
 .shaped::before, .shaped::after { content: ""; position: absolute; left: 0; right: 0; height: 14px; background: var(--grafite); z-index: 2; }
-.shaped::before { top: 0; } .shaped::after { bottom: 8%; }
+.shaped::before { top: 0; } .shaped::after { bottom: 0; }
 .panel .right { padding: 56px 56px 56px 0; display: grid; gap: 48px; align-content: start; }
 .person { background: var(--azul-cartao); border-radius: var(--r); padding: 24px; border-left: 12px solid var(--azul-claro); }
 .person small { display: block; font-size: 1rem; font-weight: 700; color: var(--azul-claro); margin-top: 4px; }
